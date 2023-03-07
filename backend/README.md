@@ -18,10 +18,11 @@ DB_PASSWORD=your_db_password
 DB_NAME=your_db_name
 ```
 
-4. Adapt _database.sql_ with your own tables. Import the script in your SQL server. You can do it manually or run _migrate_ script (either using `npm run migrate` or `yarn run migrate`).
+4. database.sql_ wis done with a dataset. Import the script in your SQL server. You can do it manually or run _migrate_ script (either using `npm run migrate` or `yarn run migrate`).
 5. Start the server in dev mode with `npm run dev` or `yarn run dev`. This will run `index.js` using _nodemon_.
-6. Go to `localhost:5000` with your favorite browser.
-7. From this starter kit, create your own web application.
+6. Go to `localhost:5000/cars` with your favorite browser.
+7. From this starter kit, you will implement your logger.
+8. On the route 'POST' and 'PUT', there is already a data validation with joy.
 
 ### Windows Users
 
@@ -34,10 +35,10 @@ If you develop on Windows, you should edit you git configuration to change your 
 An example (a basic list of items) is provided (you can load the _database.sql_ file in a test database). The accessible URLs are :
 
 - Home page: [GET localhost:5000/](localhost:5000/)
-- Item browse: [GET localhost:5000/items](localhost:5000/items)
-- Item read: [GET localhost:5000/items/:id](localhost:5000/items/2)
-- Item edit: PUT localhost:5000/items/:id
-- Item add: POST localhost:5000/items
-- Item deletion: DELETE localhost:5000/items/:id
+- Cars browse: [GET localhost:5000/cars](localhost:5000/cars)
+- Cars read: [GET localhost:5000/cars/:id](localhost:5000/cars/2)
+- Cars edit: PUT localhost:5000/cars/:id
+- Cars add: POST localhost:5000/cars
+- Cars deletion: DELETE localhost:5000/cars/:id
 
 You can find all these routes declared in the file `src/router.js`. You can add your own new routes, controllers and models.
